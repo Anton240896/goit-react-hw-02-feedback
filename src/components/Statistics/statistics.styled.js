@@ -6,5 +6,3 @@ export const ContainerStats = styled.div`
   margin-top: 65px;
   font-weight: bold;
 `;
-
-export const Paragragh = styled.p``;
