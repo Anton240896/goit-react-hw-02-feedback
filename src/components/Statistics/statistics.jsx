@@ -1,4 +1,4 @@
-import { ContainerStats, Paragragh } from './statistics.styled';
+import { ContainerStats } from './statistics.styled';
 
 export const Statistics = ({
   good,
