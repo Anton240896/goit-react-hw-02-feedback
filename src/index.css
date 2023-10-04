@@ -1,9 +1,9 @@
 @import-normalize;
+
 /* bring in normalize.css styles */
 
-
 body {
-  background: url(./1325267.png);
+  background: url(./Images/1325267.png);
   background-position-y: 2rem;
   background-repeat: no-repeat;
 

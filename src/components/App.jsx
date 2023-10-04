@@ -14,7 +14,7 @@ export class App extends Component {
 
   /*============================================*/
 
-  UpdateFeedback = type => {
+  updateFeedback = type => {
     this.setState(prevState => {
       return { [type]: prevState[type] + 1 };
     });
@@ -47,7 +47,7 @@ export class App extends Component {
         <Section className="Please-feedback" title="Please leave your feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
-            onLeaveFeedback={this.UpdateFeedback}
+            onLeaveFeedback={this.updateFeedback}
           />
         </Section>
 
