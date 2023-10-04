@@ -4,8 +4,9 @@
 
 body {
   background: url(./1325267.png);
-  /* background-repeat: space; */
+  background-position-y: 2rem;
   background-repeat: no-repeat;
+
 
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
