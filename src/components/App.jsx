@@ -12,6 +12,8 @@ export class App extends Component {
     bad: 0,
   };
 
+  /*============= START OF FUNCTIONS ====================*/
+
   updateFeedback = type => {
     this.setState(prevState => {
       return { [type]: prevState[type] + 1 };
