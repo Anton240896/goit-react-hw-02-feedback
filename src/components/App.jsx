@@ -42,7 +42,7 @@ export class App extends Component {
 
     return (
       <Container>
-        <Section className="Please-feedback" title="Please leave your feedback">
+        <Section title="Please leave your feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
             onLeaveFeedback={this.updateFeedback}
