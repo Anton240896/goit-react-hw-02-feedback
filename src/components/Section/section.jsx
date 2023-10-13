@@ -1,6 +1,8 @@
+import { Message } from './section.styled';
+
 export const Section = ({ title, children }) => (
   <div>
-    <h2>{title}</h2>
+    <Message>{title}</Message>
     {children}
   </div>
 );

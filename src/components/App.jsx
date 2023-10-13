@@ -12,7 +12,7 @@ export class App extends Component {
     bad: 0,
   };
 
-  /*============= START OF FUNCTIONS ====================*/
+  /*======== START OF FUNCTIONS ===========*/
 
   updateFeedback = type => {
     this.setState(prevState => {
@@ -20,14 +20,14 @@ export class App extends Component {
     });
   };
 
-  /*============================================*/
+  /*======= ADD STATE =========*/
 
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
     return good + neutral + bad;
   };
 
-  /*============================================*/
+  /*====== ADD PERCENTAGE ========*/
 
   countPositiveFeedbackPercentage = () => {
     const { good } = this.state;
@@ -35,7 +35,7 @@ export class App extends Component {
     return total > 0 ? Math.round((good / total) * 100) : 0;
   };
 
-  /*============================================*/
+  /*======== RENDER ========*/
 
   render() {
     const { good, neutral, bad } = this.state;
@@ -44,14 +44,14 @@ export class App extends Component {
 
     return (
       <Container>
-        <Section title="Please leave your feedback">
+        <Section title="Please leave your feedback:">
           <FeedbackOptions
             options={Object.keys(this.state)}
             onLeaveFeedback={this.updateFeedback}
           />
         </Section>
 
-        <Section title="Statistics">
+        <Section title="Statistics:">
           {total !== 0 ? (
             <Statistics
               good={good}
