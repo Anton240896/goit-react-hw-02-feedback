@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FiCoffee } from 'react-icons';
 
 export const Container = styled.div`
   width: 619px;
